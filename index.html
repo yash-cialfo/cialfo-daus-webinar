@@ -174,9 +174,9 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Roboto',system-ui,
 
 /* ════ SLIDE 3 ════ */
 .count-grid{display:flex;flex-wrap:wrap;gap:20px;justify-content:center;width:100%;margin-top:32px}
-.count-card{background:#fff;border-radius:16px;padding:32px 28px;text-align:center;box-shadow:0 4px 24px rgba(15,33,97,.1);flex:1;min-width:200px;max-width:260px}
+.count-card{background:#fff;border-radius:16px;padding:28px 20px;text-align:center;box-shadow:0 4px 24px rgba(15,33,97,.1);flex:1;min-width:180px;max-width:240px;overflow:hidden}
 .count-flag{font-size:36px;margin-bottom:12px;display:block}
-.count-num{font-family:Georgia,'Georgia Pro',serif;font-size:clamp(28px,4vw,48px);font-weight:bold;line-height:1}
+.count-num{font-family:Georgia,'Georgia Pro',serif;font-size:clamp(20px,2.6vw,34px);font-weight:bold;line-height:1.2;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%}
 .count-num-blue{color:var(--blue)}
 .count-num-yellow{color:var(--navy)}
 .count-country{font-size:12px;font-weight:600;color:var(--blue);margin-top:10px;letter-spacing:2px;text-transform:uppercase}
@@ -254,7 +254,7 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Roboto',system-ui,
 .zero-tagline{font-size:15px;color:rgba(255,255,255,.5);letter-spacing:.5px}
 
 /* ════ SLIDE 12 SCHOLARSHIPS ════ */
-.schol-cards-grid{display:grid;grid-template-rows:repeat(4,1fr);gap:12px;height:100%}
+.schol-cards-grid{display:flex;flex-direction:column;gap:12px;width:100%;flex:1}
 .schol-card{background:#fff;border-radius:12px;padding:18px 20px;display:flex;align-items:center;gap:14px;border-left:4px solid var(--blue)}
 .schol-card:nth-child(2){border-left-color:var(--yellow)}
 .schol-card:nth-child(3){border-left-color:var(--purple)}
@@ -264,11 +264,11 @@ html,body{width:100%;height:100%;overflow:hidden;font-family:'Roboto',system-ui,
 .schol-amount{font-size:13px;color:var(--blue);font-weight:500}
 
 /* ════ SLIDE 13 PYRAMID ════ */
-.pyramid-wrap{display:flex;flex-direction:column;align-items:center;gap:0;margin:24px 0;width:100%}
-.pyr-tier{border-radius:10px;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:16px 24px}
-.pyr-tier-reach{width:35%;background:linear-gradient(135deg,rgba(108,65,214,.12),rgba(108,65,214,.04));border:1px solid rgba(108,65,214,.25)}
-.pyr-tier-match{width:55%;background:linear-gradient(135deg,rgba(24,134,223,.09),rgba(24,134,223,.03));border:1px solid rgba(24,134,223,.18);margin-top:-3px}
-.pyr-tier-safety{width:80%;background:linear-gradient(135deg,rgba(46,204,113,.09),rgba(46,204,113,.03));border:1px solid rgba(46,204,113,.18);margin-top:-3px}
+.pyramid-wrap{display:flex;flex-direction:column;align-items:center;gap:4px;margin:24px 0;width:100%;max-width:560px;align-self:center}
+.pyr-tier{border-radius:0;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:14px 24px;min-height:68px;transition:transform .2s ease}.pyr-tier:hover{transform:scaleX(1.02)}
+.pyr-tier-reach{width:38%;background:linear-gradient(135deg,rgba(108,65,214,.15),rgba(108,65,214,.05));border:2px solid rgba(108,65,214,.3);border-radius:8px 8px 0 0}
+.pyr-tier-match{width:62%;background:linear-gradient(135deg,rgba(24,134,223,.12),rgba(24,134,223,.04));border:2px solid rgba(24,134,223,.22);border-top:none}
+.pyr-tier-safety{width:88%;background:linear-gradient(135deg,rgba(46,204,113,.12),rgba(46,204,113,.04));border:2px solid rgba(46,204,113,.22);border-top:none;border-radius:0 0 8px 8px}
 .pyr-label{font-family:Georgia,'Georgia Pro',serif;font-size:clamp(14px,1.8vw,20px);font-weight:bold;margin-bottom:3px;text-align:center}
 .pyr-sub{font-size:12px;color:#778;text-align:center}
 .pyr-callout{background:#fff;border-radius:12px;padding:14px 20px;margin-top:16px;border-left:4px solid var(--yellow);box-shadow:0 2px 16px rgba(15,33,97,.08);width:100%}
